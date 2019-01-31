@@ -1,0 +1,1868 @@
+{
+    "storyDescription": "At first I thought this unknown number was a total creeper, but then something sort of magical happened.",
+    "lang": "en",
+    "loveCount": 4016,
+    "messages": [
+        {
+            "ordinalInStory": 1,
+            "text": "are you up for a game?",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "VGZfnpiAMe",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 2,
+            "text": "I think you sent this txt to the wrong number",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "NdmrNwL6EX",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 3,
+            "text": "nonsense, madison.",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "5LgwsJ8NYR",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 4,
+            "text": "i want to play with you :)",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "f5AmF8Wz7f",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 5,
+            "text": "who is this? what game?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "4dFLi0okUE",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 6,
+            "text": "this is your best friend :D",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "SHTjG63LLl",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 7,
+            "text": "uhh...no, it's not.",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "H0TnyS0Dhh",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 8,
+            "text": "this isn't abby or sophie's number.",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "lxoY66Nl5j",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 9,
+            "text": "who are you?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "74yRP5KQpB",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 10,
+            "text": "why can't i see what number you're txting from?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "CehtuDz8cW",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 11,
+            "text": "lol, not one of your BFFs",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "R95ImTz8Pt",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 12,
+            "text": "i'm the best friend you've never met",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "6c6y9TjzSK",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 13,
+            "text": "i'm the one who is going to make wishes come true",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "YDxTjZgGel",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 14,
+            "text": "i don't know who you are...",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "YLAy5TA09N",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 15,
+            "text": "but you're being a total creeper",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "gjoIbH0r2C",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 16,
+            "text": "want to find out who i am?",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "swwZOhv8hv",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 17,
+            "text": "we can play a game",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "Hdqcf1oVTX",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 18,
+            "text": "no. stop texting me",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "msEdU7Gu7t",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 19,
+            "text": "i'm sorry.",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "MAtZRzGj0D",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 20,
+            "text": "i'm getting off on the wrong foot",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "6qORPqDLjU",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 21,
+            "text": "what i really want to know is...",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "HTruKx3thi",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 22,
+            "text": "do you want to go to homecoming?",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "pjovzMtAyg",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 23,
+            "text": "OMG",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "lVEXtj3eo0",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 24,
+            "text": "wait, really?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "60nAHIHkDy",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 25,
+            "text": "that's what this is?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "gFlTPanj6L",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 26,
+            "text": "you're super nice and smart...",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "Su2OpU3AvQ",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 27,
+            "text": "and I think you should have a fun date for the dance ;)",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "KJl70phq09",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 28,
+            "text": "alright, Mystery Man.",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "mGhqOHdojf",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 29,
+            "text": "i get it.",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "YMWCmDB00A",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 30,
+            "text": "what game do i have to play to find out who you are? :)",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "RKm98gAREn",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 31,
+            "text": "how about a scavenger hunt?",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "Y3IhiVKNwZ",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 32,
+            "text": "right now? i kind of have plans...",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "9zCHCK7aY2",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 33,
+            "text": "call sophie about your yoga class, and text me back afterwards",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "OXRUcJigQD",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 34,
+            "text": "how do you know sophie and i are going to yoga?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "YRa2IgEL1m",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 35,
+            "text": "i called sophie",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "fs9ntaiuRB",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 36,
+            "text": "she's feeling “sick” and has to cancel.",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "jpYFOjda2h",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 37,
+            "text": "so sophie is in on this? i think i know who you are now...",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "In0NoRLtek",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 38,
+            "text": "oh, you do? :)",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "fmjlNmlNs8",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 39,
+            "text": "i have my hopes ;)",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "RdkX68jnJP",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 40,
+            "text": "who do you think I am then?",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "kWIyTTjPOL",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 41,
+            "text": "i'm not telling :p",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "ZEbPLRhY6o",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 42,
+            "text": "well, i guess you'll find out...ready for our scavenger hunt?",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "CUDigTR3gE",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 43,
+            "text": "where do we start?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "xuql11RPIb",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 44,
+            "text": "it's 3 things: something from a bargain bin, a penny that's been wished with, and something 15 and silver",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "r2cwu9DEBz",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 45,
+            "text": "oh wow. talk about cryptic",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "HmwWD6hLJO",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 46,
+            "text": "bargain bin...like at goodwill?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "K2DEfK7hji",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 47,
+            "text": ";D",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "b8lTzUBP7v",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 48,
+            "text": "lemme bike over there",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "guzFCHzAxh",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 49,
+            "text": "i'll text you when I get there and need to know what I'm looking for",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "BeijYznjBA",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 50,
+            "text": "you'll know it when you see it ;)",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "Lr3NbDYHYR",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 51,
+            "text": "OMG. I'M HERE. I FOUND IT.",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "geEgxwg44E",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 52,
+            "text": "Do you like it? :)",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "n76gGFwwB3",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 53,
+            "text": "how did a BG Haute gown end up in the bargain bin????",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "wIdRHurg93",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 54,
+            "text": "it's still got the original tags in it and everything, but the thrift shop's selling it for $5!!!",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "oHoiOaRML3",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 55,
+            "text": "i don't know who you are, but you're magical. i bought the dress",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "y84bE6gFb4",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 56,
+            "text": "ready for your next surprise?",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "BSVutecFK9",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 57,
+            "text": "yeah. i've got to find a coin from like a wishing well?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "rF8Nzf3JRE",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 58,
+            "text": "maybe...",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "YsgOvgBkiS",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 59,
+            "text": "kids throw pennies in the fountain at the silver lake mall...does that count?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "eQVXCn27pG",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 60,
+            "text": ":D",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "HAj9ytZces",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 61,
+            "text": "OK. heading to the mall",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "ox3zakSFbo",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 62,
+            "text": "so i'm at the fountain. i found a penny. i don't get it",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "jf7NxvGErK",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 63,
+            "text": "wait for it ;)",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "c74CR495jF",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 64,
+            "text": "WTF is going on",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "XOe00lPqXA",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 65,
+            "text": "What's the matter? :/",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "qmIU0obtnr",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 66,
+            "text": "Tanner Mooney just came out of game stop and saw me and we just sat and chatted for like 15 minutes at the fountain",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "xu7wj8DQSN",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 67,
+            "text": "he asked me to homecoming",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "xGcbeHQz3j",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 68,
+            "text": "don't you like tanner? i thought you were wishing he would ask you... :(",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "B5xbeAiTkv",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 69,
+            "text": "nobody knows that except for Sophie and Rachel",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "3d5y9fjDuC",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 70,
+            "text": "i thought YOU wanted to ask me out",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "MyPutZhWht",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 71,
+            "text": "i just wanted you to have a nice date",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "dxUztFvi8G",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 72,
+            "text": "you're a total creeper. you put Tanner up to this?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "lpEbgIhVFq",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 73,
+            "text": "what's going on?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "buPNOXbbfT",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 74,
+            "text": "WHO ARE YOU?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "HE7pSiDhfo",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 75,
+            "text": "something 15 and silver",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "5obQIVqW6x",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 76,
+            "text": "WTF does that mean",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "idujODBDEC",
+            "mediaWidth": 0,
+            "chargeable": true,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 77,
+            "text": "you're almost finished with the game",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "DRfveVLQs2",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 78,
+            "text": "screw your game. you're freaking me out",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "MgU9zLYC05",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 79,
+            "text": "don't freak out. i'm the best friend you've never met, remember?",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "LTFHHkVlPj",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 80,
+            "text": "you're a creep. do you even go to LHS?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "LO5PhC2CUq",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 81,
+            "text": "15 and silver",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "u6nlzvEFAP",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 82,
+            "text": "STOP SAYING THAT",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "RGHg7K8mAD",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 83,
+            "text": "you'll have to figure it out if you want to know who i am",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "As2GXxk8mb",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 84,
+            "text": "i may have forgoten to mention...you have to win the game to keep all the prizes",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "PtCIhop7TW",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 85,
+            "text": "what does that mean?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "HqBAkccrMO",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 86,
+            "text": "the dress, the date...you have to win otherwise it goes away",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "syG3jGH0S5",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 87,
+            "text": "what, you're going to steal my dress and get tanner to un-ask me?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "Vg1D2HufxT",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 88,
+            "text": "maybe you'll lose the dress. or tear it.",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "rXCz9BLIHc",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 89,
+            "text": "maybe you get grounded before the dance.",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "620Z6roGN7",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 90,
+            "text": "maybe tanner's family forces him to visit his aunt that weekend",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "i4C6tsdG9i",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 91,
+            "text": "WTF you can't do that.",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "ix7C3hzVc6",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 92,
+            "text": "you're the one who said I was magical",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "SimCRS0dl3",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 93,
+            "text": "something 15 and Silver",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "hp5dZWmKkL",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 94,
+            "text": "...is 15 an age?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "bgh0qUHKp8",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 95,
+            "text": "no",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "uAkpr99qOb",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 96,
+            "text": "is silver a name?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "4EF5hVGpUW",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 97,
+            "text": "a name of something, not someone",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "GYLbZYTJMD",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 98,
+            "text": "does 15 and silver describe who you are?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "5LqrZcWSuo",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 99,
+            "text": "no.",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "zXaN0O0lrX",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 100,
+            "text": "does it describe where you are?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "DAER7way61",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 101,
+            "text": "smart girl ;)",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "q5q7Nf1U6v",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 102,
+            "text": "are you out on the lake right now?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "8Zc55kX8oS",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 103,
+            "text": "close...",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "C8aRPPmZfR",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 104,
+            "text": "is 15 a dock or a house number or something on silver lake?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "8xry8oIWCr",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 105,
+            "text": "not quite...",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "5sz8BphUIY",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 106,
+            "text": "i'm biking to the lake now. maybe I'll figure it out on my way there",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "jZOvZfTy4L",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 107,
+            "text": "15TH STREET AND SILVER DRIVE",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "zTIw8orCFv",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 108,
+            "text": "IT'S AN INTERSECTION",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "f2E40x6Skw",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 109,
+            "text": "so smart! you win!",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "8Gv788sioY",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 110,
+            "text": "come find me",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "DVox3R2tFE",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 111,
+            "text": "i'm waiting with prize number three :)",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "Vcj37YCyg8",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 112,
+            "text": "i'm on silver drive now. give me 5",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "5N2cjaG0VL",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 113,
+            "text": "OK, i'm here. i don't see you. are you in the woods?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "lxTlCcXMhz",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 114,
+            "text": "you said you'd be here",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "Hak38aq8At",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 115,
+            "text": "this isn't just another stupid clue is it?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "gtrJpXHb0o",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 116,
+            "text": "i'm not going to look for clues",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "vvhpVQqzh1",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 117,
+            "text": "you're freaking me out. there's NO ONE out here",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "Xks5lV3JVm",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 118,
+            "text": "if you're not even going to text me back, i'm leaving",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "nb2F0VGhVZ",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 119,
+            "text": "you're not going to leave me",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "LECa5RjjQn",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 120,
+            "text": "not after I just gave you the most beautiful dress you could wish for and the best homecoming date you could wish for.",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "qGC2VWImAQ",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 121,
+            "text": "then where are you?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "rSN75QLxWH",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 122,
+            "text": "check under the street sign",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "9wE3l0aTi8",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 123,
+            "text": "in all this grass?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "EBywLoXh9E",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 124,
+            "text": "i found a dorky clay thing. is this part of the game?",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "pgriwcS0Uf",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 125,
+            "text": "you win, madison",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "XV543lhTrM",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 126,
+            "text": "what is it? i don't get it",
+            "sender": {
+                "main": false,
+                "objectId": "8SyLSrVxBD",
+                "name": "Madison"
+            },
+            "objectId": "0IWVNcmkbT",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 127,
+            "text": "it's an oil lamp",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "AjpEnTAuKi",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 128,
+            "text": "go on, pick it up",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "dxClGpIIdV",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        },
+        {
+            "ordinalInStory": 129,
+            "text": "you've still got one wish left",
+            "sender": {
+                "main": false,
+                "objectId": "ooX7O4uU5r",
+                "name": "Unknown"
+            },
+            "objectId": "fycvWR1h7A",
+            "mediaWidth": 0,
+            "chargeable": false,
+            "mediaHeight": 0,
+            "isTypingIntroDuration": 0
+        }
+    ],
+    "tags": [
+        "ChickLit",
+        "Fantasy"
+    ],
+    "author": {
+        "writeCount": 13,
+        "loveCount": 0,
+        "lastName": "Greathouse",
+        "bio": "Author of THE NEVERLAND WARS, a YA fantasy novel and modern day continuation of the Peter Pan story, available for preorder now. Her other books, short stories, flash fiction, and poems can be found on audreygreathouse.com\n\nAudrey Greathouse is a lost child in a perpetual footloose quest for her own post-adolescent Neverland. Originally from Seattle, she earned her BA in English literature online from Southern New Hampshire University while backpacking the west coast. A pianist, circus artist, fire-eater, street mime, swing dancer, and novelist, she has warn many hats as an artist and now resides in Silicon Valley's San Jose.\n\n@missaudreyjoy on Twitter\nFacebook/audrey.greathouse\nLittlemissaudrey.tumblr.com\n",
+        "fullName": "Audrey Greathouse",
+        "bookmarkCount": 0,
+        "objectId": "tfOfmDq6yg",
+        "followingCount": 470,
+        "profilePictureMedium": {
+            "__type": "File",
+            "name": "mfp_866cbfd919ed0d1f0c8bd438a3e8c08bfile",
+            "url": "https://hooked-parse-server.s3.amazonaws.com/mfp_866cbfd919ed0d1f0c8bd438a3e8c08bfile"
+        },
+        "website": "audreygreathouse.com",
+        "profilePictureSmall": {
+            "__type": "File",
+            "name": "mfp_bf80295d2e616bab4ace5f0ae447c8a0file",
+            "url": "https://hooked-parse-server.s3.amazonaws.com/mfp_bf80295d2e616bab4ace5f0ae447c8a0file"
+        },
+        "username": "AudreyGreathouse",
+        "followerCount": 791,
+        "readCount": 8,
+        "firstName": "Audrey"
+    },
+    "genre": "Mystery",
+    "objectId": "t4dR1hvQ5K",
+    "coverImageLoRes": {
+        "__type": "File",
+        "name": "bfc9fd6bd41df408cd6633f6469beadd_152-thumbnail-lores.jpg",
+        "url": "https://hooked-parse-server.s3.amazonaws.com/bfc9fd6bd41df408cd6633f6469beadd_152-thumbnail-lores.jpg"
+    },
+    "wordCount": 906,
+    "editorsChoice": false,
+    "seriesTitle": "Scavenger Hunt",
+    "coverImageThumbnailFile": {
+        "__type": "File",
+        "name": "cc1f40bab500ef3d6192597533debc95_file.bin",
+        "url": "https://hooked-parse-server.s3.amazonaws.com/cc1f40bab500ef3d6192597533debc95_file.bin"
+    },
+    "episodeIndex": 1,
+    "coverImageFile": {
+        "__type": "File",
+        "name": "72c59901f54eb0ad95d8f5312d7503d4_152.jpg",
+        "url": "https://hooked-parse-server.s3.amazonaws.com/72c59901f54eb0ad95d8f5312d7503d4_152.jpg"
+    },
+    "uid": "scavengerhunt-app",
+    "readCount": 231863,
+    "episodeCount": 1,
+    "seriesIdentifier": "dbb5efd4-4189-e0d9-0545-5f82974fb838",
+    "commentCount": 982
+}

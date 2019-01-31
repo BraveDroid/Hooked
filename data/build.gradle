@@ -6,10 +6,10 @@ android {
     compileSdkVersion Versions.compile_sdk
 
     defaultConfig {
-        Versions.version_code
-        Versions.version_name
         minSdkVersion Versions.min_sdk
         targetSdkVersion Versions.target_sdk
+        Versions.version_code
+        Versions.version_name
 
         testInstrumentationRunner Versions.testInstrumentationRunner
     }
@@ -20,20 +20,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-}
 
+}
 
 dependencies {
     implementation Dependencies.kotlin_stdlib
-
-    implementation Dependencies.appcompat
-    implementation Dependencies.core_ktx
+    implementation Dependencies.gson
 
     testImplementation Dependencies.junit
 
     androidTestImplementation Dependencies.android_test_runner
     androidTestImplementation Dependencies.android_test_espresso_core
 
-    implementation project(':use_cases')
     implementation project(':domain')
+    implementation project(':use_cases')
 }

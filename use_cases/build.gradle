@@ -5,6 +5,8 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion Versions.compile_sdk
 
+
+
     defaultConfig {
         Versions.version_code
         Versions.version_name
@@ -20,20 +22,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-}
 
+}
 
 dependencies {
     implementation Dependencies.kotlin_stdlib
-
-    implementation Dependencies.appcompat
-    implementation Dependencies.core_ktx
 
     testImplementation Dependencies.junit
 
     androidTestImplementation Dependencies.android_test_runner
     androidTestImplementation Dependencies.android_test_espresso_core
 
-    implementation project(':use_cases')
     implementation project(':domain')
 }
