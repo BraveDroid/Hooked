@@ -27,7 +27,7 @@ dependencies {
     implementation Dependencies.kotlin_stdlib
 
     implementation project(':presentation')
-    implementation project(':data')
+    implementation project(':data_access')
     implementation project(':use_cases')
     implementation project(':domain')
 }
