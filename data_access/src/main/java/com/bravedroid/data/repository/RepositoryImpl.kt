@@ -30,7 +30,7 @@ class RepositoryImpl : Repository {
                     1,
                     "title Fat7iz",
                     "description my man",
-                    "https://d255esdrn735hr.cloudfront.net/sites/default/files/bookretailers/V13309_Low.png"
+                    "https://voiture.kidioui.fr/image/lexique/sw.jpg"
                 )
             )
             return null

@@ -14,6 +14,6 @@ class HookedApp : Application() {
         super.onCreate()
     }
 
-    fun inject(): Reader = reader
+    fun injectReader(): Reader = reader
 
 }

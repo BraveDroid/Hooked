@@ -8,18 +8,19 @@
         <variable
                 name="vm"
                 type="com.bravedroid.presentation.reader.CoverScreenVM"/>
-            </data>
+        <variable
+                name="listener"
+                type="com.bravedroid.presentation.reader.CoverScreenFragment.Listener"/>
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <!--app:imageUrl="@{vm.data.urlImageCover}"-->
-
         <ImageView
                 tools:src="@drawable/cover_placeholder"
                 android:scaleType="centerCrop"
-                app:imageUrl="@{vm.imageCoverUrl}"
+                app:imageUrl="@{vm.data.urlImageCover}"
                 app:requestListener="@{vm.requestListener}"
                 android:id="@+id/imageCover"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -47,7 +48,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="4dp"
-                android:text="@{vm.title}"
+                android:text="@{vm.data.title}"
                 android:textColor="#FFF"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -60,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:text="@{vm.description}"
+                android:text="@{vm.data.description}"
                 android:textColor="#FFF"
                 android:textSize="20dp"
                 android:ellipsize="end"
@@ -81,7 +82,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:onClick="@{() -> vm.onArrowButtonClick()}"/>
+                android:onClick="@{() -> listener.onInitiateStory(vm.data.id)}"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -10,16 +10,16 @@ import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.RequestOptions
 
 @BindingAdapter(value = ["imageUrl", "requestListener"])
-fun ImageView.bindRequestListener(imageUrl: String, requestListener: RequestListener<Drawable>) {
+fun ImageView.bindRequestListener(imageUrl: String?, requestListener: RequestListener<Drawable>?) {
+    if (imageUrl == null) return
+
     val options: RequestOptions = RequestOptions()
-    .placeholder(R.drawable.cover_placeholder)
-    .error(R.drawable.cover_error)
+        .placeholder(R.drawable.cover_placeholder)
+        .error(R.drawable.cover_error)
 
     Glide.with(context.applicationContext)
         .setDefaultRequestOptions(options)
         .load(imageUrl)
         .listener(requestListener)
         .into(this)
-
 }
-

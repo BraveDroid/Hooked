@@ -63,10 +63,12 @@ object Dependencies {
     //UI
     val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     val glide_compiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
+
     val app_compat_v7 = "com.android.support:appcompat-v7:${Versions.support_lib}"
     val design = "com.android.support:design:${Versions.support_lib}"
     val support_v4 = "com.android.support:support-v4:${Versions.support_lib}"
     val recyclerview_v7 = "com.android.support:recyclerview-v7:${Versions.support_lib}"
+
 
     //tools
     val jetbrains_annotations = "org.jetbrains:annotations:${Versions.jetbrains_annotations}"

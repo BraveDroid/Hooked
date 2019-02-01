@@ -1,5 +1,6 @@
 package com.bravedroid.presentation.reader
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,10 +13,25 @@ import com.bravedroid.usecases.reader.Reader
 class CoverScreenFragment : Fragment() {
     var tagNameFragment: String? = TAG
 
+    private lateinit var reader: Reader
     private lateinit var binding: LayoutCoverScreenFragmentBinding
 
-    lateinit var reader: Reader
     lateinit var vm: CoverScreenVM
+    private var listener: Listener? = null
+
+    fun injectReader(reader: Reader) {
+        this.reader = reader
+    }
+
+    override fun onAttach(context: Context?) {
+        super.onAttach(context)
+        listener = context as Listener
+    }
+
+    override fun onDetach() {
+        listener = null
+        super.onDetach()
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = LayoutCoverScreenFragmentBinding.inflate(inflater);
@@ -25,14 +41,15 @@ class CoverScreenFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        val factory= CoverScreenVM.ViewModelFactory(reader)
+        val factory = CoverScreenVM.ViewModelFactory(reader)
         vm = ViewModelProviders.of(this, factory).get(CoverScreenVM::class.java)
-
-        vm = CoverScreenVM(reader)
         binding.vm = vm
+        binding.listener = listener
     }
 
-
+    interface Listener {
+        fun onInitiateStory(storyId: Int)
+    }
 
     companion object {
         val TAG = CoverScreenFragment::class.java.simpleName

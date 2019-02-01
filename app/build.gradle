@@ -31,7 +31,6 @@ android {
 dependencies {
     implementation Dependencies.kotlin_stdlib
     implementation Dependencies.appcompat
-
     implementation project(':presentation')
     implementation project(':data_access')
     implementation project(':use_cases')
