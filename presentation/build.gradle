@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion Versions.compile_sdk
@@ -20,13 +21,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
     implementation Dependencies.kotlin_stdlib
 
     implementation Dependencies.appcompat
+    implementation Dependencies.constraint_layout
     implementation Dependencies.core_ktx
+    implementation Dependencies.glide
+    annotationProcessor Dependencies.glide_compiler
 
     testImplementation Dependencies.junit
 

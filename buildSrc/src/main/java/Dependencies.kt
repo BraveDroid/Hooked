@@ -16,8 +16,10 @@ object Versions {
 
     //androidx
     val support_lib = "$compile_sdk.0.0"
-    val constraint_layout = "1.1.3"
+    val constraint_layout = "1.1.2"
     val lifecycle_version = "1.1.1"
+    //UI
+    val glide = "4.8.0"
 
     //tools
     val jetbrains_annotations = "16.0.3"
@@ -50,11 +52,13 @@ object Dependencies {
     val android_arch_lifecycle_core_testing = "android.arch.core:core-testing:${Versions.lifecycle_version}"
 
     //androidX
-    val appcompat="androidx.appcompat:appcompat:1.0.0"
-    val core_ktx="androidx.core:core-ktx:1.0.0"
-
+    val appcompat = "androidx.appcompat:appcompat:1.0.0"
+    val core_ktx = "androidx.core:core-ktx:1.0.0"
+    val constraint_layout = "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout}"
+    //UI
+    val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
+    val glide_compiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
     val app_compat_v7 = "com.android.support:appcompat-v7:${Versions.support_lib}"
-    val constraint_layout = "com.android.support.constraint:constraint-layout:${Versions.constraint_layout}"
     val design = "com.android.support:design:${Versions.support_lib}"
     val support_v4 = "com.android.support:support-v4:${Versions.support_lib}"
     val recyclerview_v7 = "com.android.support:recyclerview-v7:${Versions.support_lib}"
@@ -71,8 +75,8 @@ object Dependencies {
     val junit = "junit:junit:${Versions.junit}"
 
     //Instrumental tests
-    val android_test_runner =  "androidx.test:runner:1.0.0"
-    val android_test_espresso_core =  "androidx.test.espresso:espresso-core:3.1.1"
+    val android_test_runner = "androidx.test:runner:1.0.0"
+    val android_test_espresso_core = "androidx.test.espresso:espresso-core:3.1.1"
 
     val com_android_support_test_runner = "com.android.support.test:runner:${Versions.android_test_runner}"
     val espresso_core = "com.android.support.test.espresso:espresso-core:${Versions.espresso_core}"
