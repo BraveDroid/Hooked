@@ -5,13 +5,34 @@ import android.util.Log
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
 import androidx.databinding.library.baseAdapters.BR
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import com.bravedroid.domain.Story
+import com.bravedroid.presentation.base.BaseViewModelObservable
+import com.bravedroid.usecases.reader.Reader
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 
-class CoverScreenVM : BaseObservable() {
-//    val reader: Reader= Reader()
+class CoverScreenVM(val reader: Reader) : BaseViewModelObservable() {
+   //  val data: LiveData<Story> = reader.getStory()
+
+    var data: MutableLiveData<Story> = MutableLiveData()
+
+    init {
+        data.postValue(
+            Story(
+                1,
+                "title Fat7iz",
+                "description my man",
+                "https://d255esdrn735hr.cloudfront.net/sites/default/files/bookretailers/V13309_Low.png"
+            )
+        )
+    }
+
 
     @get:Bindable
     var title = "This is the title"
@@ -36,7 +57,7 @@ class CoverScreenVM : BaseObservable() {
 
     @get:Bindable
     var imageCoverUrl =
-        "https://scd.france24.com/en/files/imagecache/hermes_infographie_vignette_home/article/image/mbs-anticorruption.jpg"
+        "https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/51094050_777735275925201_2742110278014468096_n.jpg?_nc_cat=108&_nc_ht=scontent-cdt1-1.xx&oh=df9f8c1812d4e5a5fe1501b1d3fe21a8&oe=5CFEA96B"
         set(value) {
             field = value
             notifyPropertyChanged(BR.imageCoverUrl)
@@ -80,5 +101,12 @@ class CoverScreenVM : BaseObservable() {
 
     private fun changeCoverImageVisible(isVisible: Boolean) {
         isImageCoverVisible = isVisible
+    }
+
+    class ViewModelFactory(private val reader: Reader) : ViewModelProvider.Factory {
+
+        override fun <T : ViewModel> create(modelClass: Class<T>): T {
+            return CoverScreenVM(reader) as T
+        }
     }
 }

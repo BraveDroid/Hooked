@@ -8,11 +8,13 @@
         <variable
                 name="vm"
                 type="com.bravedroid.presentation.reader.CoverScreenVM"/>
-    </data>
+            </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+        <!--app:imageUrl="@{vm.data.urlImageCover}"-->
 
         <ImageView
                 tools:src="@drawable/cover_placeholder"
