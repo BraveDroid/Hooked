@@ -1,8 +1,10 @@
-apply plugin: 'java-library'
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+}
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation Dependencies.junit
+    implementation Dependencies.kotlin_stdlib
+     testImplementation Dependencies.junit
 }
 
 sourceCompatibility = "8"

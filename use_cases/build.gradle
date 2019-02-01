@@ -28,6 +28,8 @@ android {
 dependencies {
     implementation Dependencies.kotlin_stdlib
 
+    implementation Dependencies.android_arch_lifecycle_livedata
+
     testImplementation Dependencies.junit
 
     androidTestImplementation Dependencies.android_test_runner

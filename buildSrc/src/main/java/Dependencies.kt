@@ -45,7 +45,7 @@ object Dependencies {
     //architecture component
     val android_arch_lifecycle = "android.arch.lifecycle:extensions:${Versions.lifecycle_version}"
     val android_arch_lifecycle_viewmodel = "android.arch.lifecycle:viewmodel:${Versions.lifecycle_version}"
-    val android_arch_lifecycle_livedata = "android.arch.lifecycle:livedata:${Versions.lifecycle_version}"
+//    val android_arch_lifecycle_livedata = "android.arch.lifecycle:livedata:${Versions.lifecycle_version}"
     val android_arch_lifecycle_runtime = "android.arch.lifecycle:runtime:${Versions.lifecycle_version}"
     val android_arch_lifecycle_common_java8 = "android.arch.lifecycle:common-java8:${Versions.lifecycle_version}"
     val android_arch_lifecycle_reactivestreams = "android.arch.lifecycle:reactivestreams:${Versions.lifecycle_version}"
@@ -55,6 +55,9 @@ object Dependencies {
     val appcompat = "androidx.appcompat:appcompat:1.0.0"
     val core_ktx = "androidx.core:core-ktx:1.0.0"
     val constraint_layout = "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout}"
+    val android_arch_lifecycle_livedata = "androidx.lifecycle:lifecycle-livedata:2.0.0-rc01"
+
+
     //UI
     val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     val glide_compiler = "com.github.bumptech.glide:compiler:${Versions.glide}"

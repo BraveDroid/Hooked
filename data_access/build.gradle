@@ -25,7 +25,9 @@ android {
 
 dependencies {
     implementation Dependencies.kotlin_stdlib
+
     implementation Dependencies.gson
+    implementation Dependencies.android_arch_lifecycle_livedata
 
     testImplementation Dependencies.junit
 

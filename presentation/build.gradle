@@ -36,6 +36,8 @@ dependencies {
     implementation Dependencies.glide
     annotationProcessor Dependencies.glide_compiler
 
+    implementation Dependencies.android_arch_lifecycle_livedata
+
     testImplementation Dependencies.junit
 
     androidTestImplementation Dependencies.android_test_runner
