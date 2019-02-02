@@ -48,7 +48,7 @@ class CoverScreenFragment : Fragment() {
     }
 
     interface Listener {
-        fun onInitiateStory(storyId: Int)
+        fun onInitiateStory(storyId: String)
     }
 
     companion object {

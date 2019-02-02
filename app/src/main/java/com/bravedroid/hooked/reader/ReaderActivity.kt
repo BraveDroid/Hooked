@@ -30,7 +30,7 @@ class ReaderActivity : AppCompatActivity(), CoverScreenFragment.Listener {
         }
     }
 
-    override fun onInitiateStory(storyId: Int) {
+    override fun onInitiateStory(storyId: String) {
         Log.v("TAG", "onInitiateStory  $storyId")
 
         val readerScreenFragment = ReaderScreenFragment()

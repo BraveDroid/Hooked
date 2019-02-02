@@ -36,24 +36,24 @@ class ReaderScreenVM(private val reader: Reader) : BaseViewModelObservable() {
     init {
         messagesList.value = mutableListOf(
 
-                Message(1, 1, "Rami", "hello babababababa babababa babababababa babababababababa babababababa babababababababa babababababababa mala 7ala"),
-                Message(2, 2, "Ramzi", "manich bouk"),
-                Message(3, 2, "James", "chkoun omek ?"),
-                Message(2, 2, "James", "manich bouk"),
-                Message(3, 2, "James", "chkoun omek ?"),
-                Message(2, 2, "James", "manich bouk"),
-                Message(3, 2, "James", "chkoun omek ?"),
-                Message(2, 2, "James", "manich bouk"),
-                Message(3, 2, "James", "chkoun omek ?"),
-                Message(3, 2, "James", "chkoun omek ?"),
-                Message(3, 2, "James", "chkoun omek ?"),
-                Message(3, 2, "James", "chkoun omek ?"),
-                Message(3, 2, "James", "chkoun omek ?"),
-                Message(3, 2, "James", "chkoun omek ?"),
-                Message(2, 2, "James", "manich bouk"),
-                Message(3, 2, "James", "chkoun omek ?"),
-                Message(4, 1, "Ahmed", "lol"),
-                Message(5, 1, "Ahmed", "t7eb nfadlkou?")
+                Message(1, "8", "Rami", "hello babababababa babababa babababababa babababababababa babababababa babababababababa babababababababa mala 7ala"),
+                Message(2, "8", "Ramzi", "manich bouk"),
+                Message(3, "8", "James", "chkoun omek ?"),
+                Message(2, "8", "James", "manich bouk"),
+                Message(3, "8", "James", "chkoun omek ?"),
+                Message(2, "8", "James", "manich bouk"),
+                Message(3, "8", "James", "chkoun omek ?"),
+                Message(2, "8", "James", "manich bouk"),
+                Message(3, "8", "James", "chkoun omek ?"),
+                Message(3, "8", "James", "chkoun omek ?"),
+                Message(3, "8", "James", "chkoun omek ?"),
+                Message(3, "8", "James", "chkoun omek ?"),
+                Message(3, "8", "James", "chkoun omek ?"),
+                Message(3, "8", "James", "chkoun omek ?"),
+                Message(2, "8", "James", "manich bouk"),
+                Message(3, "8", "James", "chkoun omek ?"),
+                Message(4, "8", "Ahmed", "lol"),
+                Message(5, "8", "Ahmed", "t7eb nfadlkou?")
         )
 
     }

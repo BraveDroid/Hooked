@@ -6,6 +6,6 @@ import com.bravedroid.domain.Story
 import com.bravedroid.usecases.repository.Repository
 
 class Reader(private val repository: Repository) {
-    fun getStory(storyId: Int = 1): LiveData<Story> = repository.getStory()
-    fun getMessagesForStory(storyId: Int = 1): LiveData<List<Message>> = repository.getMessageListByStory(storyId)
+    fun getStory(storyId:String): LiveData<Story> = repository.getStory(storyId)
+    fun getMessagesForStory(storyId: String): LiveData<List<Message>> = repository.getMessageListByStory(storyId)
 }

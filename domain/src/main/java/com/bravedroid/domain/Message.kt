@@ -1,8 +1,8 @@
 package com.bravedroid.domain
 
-class Message(
+data class Message(
     val id: Int,
-    val senderId: Int,
+    val senderId: String,
     val senderName: String,
     val text: String
 )

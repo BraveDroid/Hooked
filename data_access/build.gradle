@@ -27,6 +27,9 @@ dependencies {
     implementation Dependencies.kotlin_stdlib
 
     implementation Dependencies.gson
+    implementation Dependencies.retrofit
+    implementation Dependencies.converter_gson
+
     implementation Dependencies.android_arch_lifecycle_livedata
 
     testImplementation Dependencies.junit

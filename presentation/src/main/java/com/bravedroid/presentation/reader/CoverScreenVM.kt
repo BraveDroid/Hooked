@@ -16,7 +16,7 @@ import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 
 class CoverScreenVM(val reader: Reader) : BaseViewModelObservable() {
-    val data: LiveData<Story> = reader.getStory()
+    val data: LiveData<Story> = reader.getStory("scavengerhunt")//todo be injected later
 
     @get:Bindable
     var isImageCoverVisible = true
