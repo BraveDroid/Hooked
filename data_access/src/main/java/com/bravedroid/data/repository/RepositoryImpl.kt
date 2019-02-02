@@ -10,14 +10,15 @@ import com.bravedroid.domain.Message
 import com.bravedroid.domain.Story
 import com.bravedroid.domain.User
 import com.bravedroid.usecases.repository.Repository
-import java.lang.RuntimeException
 
 class RepositoryImpl : Repository {
 
     override fun getStory(storyId: String): LiveData<Story> {
         return if (mustCallNetwork()) {
             val liveData = MutableLiveData<Story>()
-            fetchStory(liveData, storyId, getUser())
+            if (hasInternetConnection()) {
+                fetchStory(liveData, storyId, getUser())
+            }
             liveData
         } else
             TODO("mazeeeel nekhdem feha")
@@ -36,6 +37,7 @@ class RepositoryImpl : Repository {
     private fun mustCallNetwork(): Boolean = !isLocalDataExist() || !isLocalUpToDate()
     private fun isLocalDataExist(): Boolean = false
     private fun isLocalUpToDate(): Boolean = false
+    private fun hasInternetConnection(): Boolean = true
 
     private class WorkerAsyncTask(
         private val liveData: MutableLiveData<Story>,
@@ -55,7 +57,7 @@ class RepositoryImpl : Repository {
             return null
         }
 
-        private fun generateAuthorizationHeaderValue(): String  {
+        private fun generateAuthorizationHeaderValue(): String {
             val encodeTo64 = Encoder64.encodeTo64("${user.login}:${user.password}")
             return "Basic $encodeTo64"
         }
