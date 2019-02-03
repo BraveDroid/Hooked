@@ -14,7 +14,8 @@ import com.bravedroid.usecases.reader.Reader
 
 class ReaderActivity : AppCompatActivity(), CoverScreenFragment.Listener {
     private lateinit var binding: LayoutReaderActivityBinding
-    private lateinit var reader: Reader
+    private var reader: Reader? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -25,22 +26,33 @@ class ReaderActivity : AppCompatActivity(), CoverScreenFragment.Listener {
         val isCreatedFirstTime = savedInstanceState == null
         if (isCreatedFirstTime) {
             val coverScreenFragment = CoverScreenFragment()
-            coverScreenFragment.injectReader(reader)
             placeFragment(coverScreenFragment, CoverScreenFragment.TAG)
+            coverScreenFragment.injectReader(reader!!)
+        } else {
+            val coverScreenFragment = supportFragmentManager.findFragmentByTag(CoverScreenFragment.TAG)
+            if (coverScreenFragment is CoverScreenFragment) coverScreenFragment.injectReader(reader!!)
+            val readerScreenFragment = supportFragmentManager.findFragmentByTag(ReaderScreenFragment.TAG)
+            if (readerScreenFragment is ReaderScreenFragment) readerScreenFragment.injectReader(reader!!)
         }
+    }
+
+    override fun onDestroy() {
+        reader = null
+        super.onDestroy()
     }
 
     override fun onInitiateStory(storyId: String) {
         Log.v("TAG", "onInitiateStory  $storyId")
 
         val readerScreenFragment = ReaderScreenFragment()
-        readerScreenFragment.injectReader(reader)
         placeFragment(readerScreenFragment, ReaderScreenFragment.TAG)
+        readerScreenFragment.injectReader(reader!!)
     }
 
     private fun placeFragment(fragment: Fragment, tag: String) {
         supportFragmentManager.beginTransaction()
-                .add(binding.readerFragmentContainer.id, fragment, tag)
-                .commit()
+            .add(binding.readerFragmentContainer.id, fragment, tag)
+            .commit()
     }
+
 }

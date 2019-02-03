@@ -16,7 +16,10 @@ import com.bravedroid.usecases.repository.Repository
 import java.lang.Thread.sleep
 import kotlin.concurrent.thread
 
+const val UPDATE_DEADLINE = 2 * 60
+
 class RepositoryImpl(context: Context) : Repository {
+
     private val localPersistence: LocalPersistence = LocalPersistenceImpl(context)
 
     override fun getStory(storyId: String): LiveData<SubmitUiModel<Story>> {

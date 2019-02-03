@@ -15,8 +15,10 @@
                 type="com.bravedroid.domain.Message"/>
     </data>
 
+    <!--android:visibility="@{message.id > lastIndex ? View.GONE : View.VISIBLE }"-->
+
     <androidx.cardview.widget.CardView
-            android:visibility="@{message.id > lastIndex ? View.GONE : View.VISIBLE }"
+            android:id="@+id/messageItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="#FFFFFF"
