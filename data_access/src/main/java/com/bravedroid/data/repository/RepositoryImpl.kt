@@ -52,18 +52,20 @@ class RepositoryImpl(context: Context) : Repository {
         WorkerAsyncTask(liveData, storyId, user, localPersistence).execute()
     }
 
-    override fun getMessageListByStory(storyId: String): LiveData<SubmitUiModel<List<Message>>> {
-        TODO("asbbar shwaya ")
+    override fun getMessageListByStory(storyId: String): List<Message> {
+        val struct = localPersistence.getById(storyId)!!
+        return struct.messages
     }
 
     private fun mustCallNetwork(storyId: String): Boolean = !isLocalDataExist(storyId) || !isLocalUpToDate(storyId)
     private fun isLocalDataExist(storyId: String): Boolean {
-       localPersistence.getById(storyId) ?: return false
+        localPersistence.getById(storyId) ?: return false
         return true
     }
 
     //gonna be changed later based on some conditions
-    private fun isLocalUpToDate(storyId: String): Boolean =  isLocalDataExist(storyId)
+    private fun isLocalUpToDate(storyId: String): Boolean = isLocalDataExist(storyId)
+
     private fun hasInternetConnection(): Boolean = true
 
     private class WorkerAsyncTask(
@@ -88,7 +90,6 @@ class RepositoryImpl(context: Context) : Repository {
             } else {
                 liveData.postValue(createSubmitUiModel(SubmitUiModel.ResponseState.ERROR, null, ServerResponseError()))
             }
-
             return null
         }
 

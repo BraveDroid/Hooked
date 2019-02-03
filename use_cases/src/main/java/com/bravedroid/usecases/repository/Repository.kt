@@ -7,5 +7,5 @@ import com.bravedroid.domain.SubmitUiModel
 
 interface Repository {
     fun getStory(storyId: String): LiveData<SubmitUiModel<Story>>
-    fun getMessageListByStory(storyId: String): LiveData<SubmitUiModel<List<Message>>>
+    fun getMessageListByStory(storyId: String):  List<Message>
 }

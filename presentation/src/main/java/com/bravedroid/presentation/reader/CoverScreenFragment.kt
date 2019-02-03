@@ -16,7 +16,6 @@ import com.bravedroid.presentation.databinding.LayoutCoverScreenFragmentBinding
 import com.bravedroid.usecases.reader.Reader
 
 class CoverScreenFragment : Fragment() {
-    var tagNameFragment: String? = TAG
 
     private lateinit var reader: Reader
     private lateinit var binding: LayoutCoverScreenFragmentBinding

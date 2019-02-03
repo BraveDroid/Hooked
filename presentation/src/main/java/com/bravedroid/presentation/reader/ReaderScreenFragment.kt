@@ -10,7 +10,6 @@ import com.bravedroid.presentation.databinding.LayoutReaderScreenFragmentBinding
 import com.bravedroid.usecases.reader.Reader
 
 class ReaderScreenFragment : Fragment() {
-    var tagNameFragment: String? = TAG
 
     private lateinit var reader: Reader
     private lateinit var binding: LayoutReaderScreenFragmentBinding

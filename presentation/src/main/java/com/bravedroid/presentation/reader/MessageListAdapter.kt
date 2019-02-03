@@ -9,11 +9,11 @@ import com.bravedroid.presentation.databinding.LayoutMessageItemBinding
 class MessageListAdapter(private val messageList: List<Message>) : RecyclerView.Adapter<MessageListAdapter.BindingHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BindingHolder {
         val binding: LayoutMessageItemBinding = LayoutMessageItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        binding.lastIndex=20
         return BindingHolder(binding);
     }
 
     override fun getItemCount(): Int = messageList.size
-
 
     override fun onBindViewHolder(holder: BindingHolder, position: Int) {
         val item: Message = messageList[position]
