@@ -5,9 +5,11 @@ import android.util.Log
 import androidx.databinding.Bindable
 import androidx.databinding.library.baseAdapters.BR
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.bravedroid.domain.Story
+import com.bravedroid.domain.SubmitUiModel
 import com.bravedroid.presentation.base.BaseViewModelObservable
 import com.bravedroid.usecases.reader.Reader
 import com.bumptech.glide.load.DataSource
@@ -16,7 +18,7 @@ import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 
 class CoverScreenVM(val reader: Reader) : BaseViewModelObservable() {
-    val data: LiveData<Story> = reader.getStory("scavengerhunt")//todo be injected later
+    var model: LiveData<SubmitUiModel<Story>> = reader.getStory("scavengerhunt")
 
     @get:Bindable
     var isImageCoverVisible = true
@@ -24,6 +26,10 @@ class CoverScreenVM(val reader: Reader) : BaseViewModelObservable() {
             field = value
             notifyPropertyChanged(BR.imageCoverVisible)
         }
+
+    fun onRetryClick() {
+        //todo I'll do it later
+    }
 
     fun getRequestListener(): RequestListener<Drawable> {
         return object : RequestListener<Drawable> {

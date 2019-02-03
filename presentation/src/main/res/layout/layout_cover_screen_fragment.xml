@@ -5,6 +5,7 @@
 
     <data>
         <import type="android.view.View"/>
+        <import type="com.bravedroid.domain.SubmitUiModel.ResponseState"/>
         <variable
                 name="vm"
                 type="com.bravedroid.presentation.reader.CoverScreenVM"/>
@@ -20,7 +21,7 @@
         <ImageView
                 tools:src="@drawable/cover_placeholder"
                 android:scaleType="centerCrop"
-                app:imageUrl="@{vm.data.urlImageCover}"
+                app:imageUrl="@{vm.model.data.urlImageCover}"
                 app:requestListener="@{vm.requestListener}"
                 android:id="@+id/imageCover"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -48,7 +49,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="4dp"
-                android:text="@{vm.data.title}"
+                android:text="@{vm.model.data.title}"
                 android:textColor="#FFF"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -61,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:text="@{vm.data.description}"
+                android:text="@{vm.model.data.description}"
                 android:textColor="#FFF"
                 android:textSize="20dp"
                 android:ellipsize="end"
@@ -82,7 +83,62 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:onClick="@{() -> listener.onInitiateStory(vm.data.id)}"/>
+                android:onClick="@{() -> listener.onInitiateStory(vm.model.data.id)}"/>
+
+        <!--android:visibility="@{vm.imageCoverVisible? View.GONE : View.VISIBLE}"-->
+        <ImageView
+                tools:visibility="gone"
+                android:visibility="@{vm.model.responseState == ResponseState.LOADING ? View.VISIBLE : View.GONE }"
+                android:src="@drawable/cover_placeholder"
+                android:scaleType="centerCrop"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <ProgressBar
+                tools:visibility="invisible"
+                android:id="@+id/progressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintVertical_bias="0.8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="@{vm.model.responseState == ResponseState.LOADING ? View.VISIBLE : View.GONE}"/>
+
+        <ImageView
+                tools:visibility="gone"
+                android:visibility="@{vm.model.responseState == ResponseState.ERROR ? View.VISIBLE : View.GONE }"
+                android:src="@drawable/cover_error"
+                android:scaleType="centerCrop"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:visibility="@{vm.model.responseState == ResponseState.ERROR ? View.VISIBLE : View.GONE }"
+                android:onClick="@{() -> vm.onRetryClick()}"
+                android:id="@+id/retryTextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retry_text_button"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                app:layout_constraintVertical_bias="0.8"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
