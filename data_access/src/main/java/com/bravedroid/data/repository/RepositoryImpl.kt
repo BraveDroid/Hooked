@@ -1,10 +1,12 @@
 package com.bravedroid.data.repository
 
+import android.annotation.TargetApi
 import android.content.Context
 import android.os.AsyncTask
+import android.os.Build
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.bravedroid.data.local.model.StoryStruct
+import com.bravedroid.data.local.model.StoryLocal
 import com.bravedroid.data.local.service.LocalPersistence
 import com.bravedroid.data.local.service.LocalPersistenceImpl
 import com.bravedroid.data.network.service.HookedNetworkServiceFactory
@@ -13,10 +15,9 @@ import com.bravedroid.data.util.transformToMessages
 import com.bravedroid.data.util.transformToStory
 import com.bravedroid.domain.*
 import com.bravedroid.usecases.repository.Repository
-import java.lang.Thread.sleep
-import kotlin.concurrent.thread
-
-const val UPDATE_DEADLINE = 2 * 60
+import timber.log.Timber
+import java.time.Duration
+import java.time.Instant
 
 class RepositoryImpl(context: Context) : Repository {
 
@@ -26,22 +27,45 @@ class RepositoryImpl(context: Context) : Repository {
         val liveData = MutableLiveData<SubmitUiModel<Story>>()
         liveData.value = createSubmitUiModel(SubmitUiModel.ResponseState.LOADING)
 
-        if (mustCallNetwork(storyId)) {
-            if (hasInternetConnection()) {
-                fetchStory(liveData, storyId, getUser(), localPersistence)
-            }
+        if (!isLocalDataExist(storyId)) {
+            Timber.d("isLocalDataExist FALSE")
+            Timber.d("requestNetwork")
+            requestNetwork(liveData, storyId)
         } else {
-            if (isLocalDataExist(storyId)) {
-                liveData.value = createSubmitUiModel(
-                    SubmitUiModel.ResponseState.SUCCESS,
-                    transformToStory(localPersistence.getById(storyId)!!)
-                )
+            if (isLocalDataUpToDate(storyId)) {
+                Timber.d("isLocalDataUpToDate TRUE")
+                requestLocalPersistence(storyId, liveData)
             } else {
-                liveData.value = createSubmitUiModel(SubmitUiModel.ResponseState.ERROR, null, NoInternetResponseError())
+                Timber.d("isLocalDataUpToDate FALSE")
+                Timber.d("requestNetwork")
+                requestNetwork(liveData, storyId)
             }
         }
         return liveData
+    }
 
+    private fun requestLocalPersistence(
+        storyId: String,
+        liveData: MutableLiveData<SubmitUiModel<Story>>
+    ) {
+        val storyLocal = localPersistence.getStoryLocalById(storyId)!!
+        liveData.value = createSubmitUiModel(
+            SubmitUiModel.ResponseState.SUCCESS, transformToStory(storyLocal)
+        )
+    }
+
+    private fun requestNetwork(
+        liveData: MutableLiveData<SubmitUiModel<Story>>,
+        storyId: String
+    ) {
+        if (hasInternetConnection()) {
+            Timber.d("hasInternetConnection :TRUE")
+            fetchStory(liveData, storyId, getUser(), localPersistence)
+        } else {
+            Timber.d("hasInternetConnection :FALSE")
+            liveData.value =
+                createSubmitUiModel(SubmitUiModel.ResponseState.ERROR, null, NoInternetResponseError())
+        }
     }
 
     private fun getUser() = User(login = "test", password = "VF62pqDX")
@@ -56,18 +80,21 @@ class RepositoryImpl(context: Context) : Repository {
     }
 
     override fun getMessageListByStory(storyId: String): List<Message> {
-        val struct = localPersistence.getById(storyId)!!
-        return struct.messages
+        val storyLocal = localPersistence.getStoryLocalById(storyId)!!
+        return storyLocal.messages
     }
 
-    private fun mustCallNetwork(storyId: String): Boolean = !isLocalDataExist(storyId) || !isLocalUpToDate(storyId)
-    private fun isLocalDataExist(storyId: String): Boolean {
-        localPersistence.getById(storyId) ?: return false
-        return true
-    }
+    private fun isLocalDataExist(storyId: String): Boolean =
+        localPersistence.getLastFetchInstant(storyId) != -1L
 
-    //gonna be changed later based on some conditions
-    private fun isLocalUpToDate(storyId: String): Boolean = isLocalDataExist(storyId)
+    @TargetApi(Build.VERSION_CODES.O)
+    private fun isLocalDataUpToDate(storyId: String): Boolean {
+        val last = Instant.ofEpochMilli(localPersistence.getLastFetchInstant(storyId))
+        val now = Instant.now()
+        val duration = Duration.between( last,now)
+        Timber.d("isLocalDataUpToDate duration: ${duration.seconds}:s ${duration.toMinutes()}:m")
+        return duration.toMinutes() < 2
+    }
 
     private fun hasInternetConnection(): Boolean = true
 
@@ -85,9 +112,9 @@ class RepositoryImpl(context: Context) : Repository {
             if (response.isSuccessful) {
                 val story = transformToStory(body!!)
                 val messages = transformToMessages(body!!)
-                val storyStruct: StoryStruct =
-                    StoryStruct(story.id, story.title, story.description ?: "", story.urlImageCover, messages)
-                localPersistence.saveOrUpdate(storyStruct)
+                val storyLocal: StoryLocal =
+                    StoryLocal(story.id, story.title, story.description ?: "", story.urlImageCover, messages)
+                localPersistence.saveOrUpdate(storyLocal)
 
                 liveData.postValue(createSubmitUiModel(SubmitUiModel.ResponseState.SUCCESS, story))
             } else {
@@ -103,10 +130,3 @@ class RepositoryImpl(context: Context) : Repository {
         }
     }
 }
-
-fun createSubmitUiModel(
-    responseState: SubmitUiModel.ResponseState?,
-    story: Story? = null,
-    error: ResponseError? = null
-): SubmitUiModel<Story> =
-    SubmitUiModel(responseState!!, story, error)

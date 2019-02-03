@@ -1,6 +1,6 @@
 package com.bravedroid.data.util
 
-import com.bravedroid.data.local.model.StoryStruct
+import com.bravedroid.data.local.model.StoryLocal
 import com.bravedroid.domain.Message
 import com.bravedroid.data.network.model.StoryDto
 import com.bravedroid.domain.Story
@@ -8,8 +8,8 @@ import com.bravedroid.domain.Story
 fun transformToStory(dto: StoryDto): Story =
     Story(dto.uid, dto.seriesTitle, dto.storyDescription, dto.coverImageFile.url)
 
-fun transformToStory(struct: StoryStruct): Story =
-    Story(struct.storyId, struct.title, struct.description, struct.urlImageCover)
+fun transformToStory(local: StoryLocal): Story =
+    Story(local.storyId, local.title, local.description, local.urlImageCover)
 
 fun transformToMessages(dto: StoryDto): List<Message> {
     val list = mutableListOf<Message>()

@@ -32,6 +32,9 @@ object Versions {
     val junit = "4.12"
     val espresso_core = "3.0.2"
     val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+    //log
+    val timber = "4.7.1"
 }
 
 object Dependencies {
@@ -69,7 +72,6 @@ object Dependencies {
     val support_v4 = "com.android.support:support-v4:${Versions.support_lib}"
     val recyclerview_v7 = "com.android.support:recyclerview-v7:${Versions.support_lib}"
 
-
     //tools
     val jetbrains_annotations = "org.jetbrains:annotations:${Versions.jetbrains_annotations}"
     val gson = "com.google.code.gson:gson:${Versions.gson}"
@@ -88,4 +90,7 @@ object Dependencies {
 
     val com_android_support_test_runner = "com.android.support.test:runner:${Versions.android_test_runner}"
     val espresso_core = "com.android.support.test.espresso:espresso-core:${Versions.espresso_core}"
+
+
+    val timber = "com.jakewharton.timber:timber:${Versions.timber}"
 }

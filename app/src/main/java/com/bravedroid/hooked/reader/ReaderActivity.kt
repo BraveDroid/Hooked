@@ -19,7 +19,7 @@ class ReaderActivity : AppCompatActivity(), CoverScreenFragment.Listener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        reader = (application as HookedApp).injectReader()
+        reader = (application as HookedApp).getReader()
 
         binding = DataBindingUtil.setContentView(this, R.layout.layout_reader_activity)
 
