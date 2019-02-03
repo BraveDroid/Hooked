@@ -3,17 +3,13 @@ package com.bravedroid.data.network;
 import com.bravedroid.data.network.model.StoryDto;
 import com.bravedroid.data.network.service.HookedNetworkService;
 import com.bravedroid.data.network.service.HookedNetworkServiceFactory;
-
 import org.junit.Before;
 import org.junit.Test;
+import retrofit2.Response;
 
 import java.io.IOException;
 
-import okhttp3.ResponseBody;
-import retrofit2.Response;
-
 import static java.net.HttpURLConnection.HTTP_OK;
-import static java.net.HttpURLConnection.HTTP_UNAUTHORIZED;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;

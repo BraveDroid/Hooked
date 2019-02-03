@@ -14,12 +14,12 @@ fun ImageView.bindRequestListener(imageUrl: String?, requestListener: RequestLis
     if (imageUrl == null) return
 
     val options: RequestOptions = RequestOptions()
-        .placeholder(R.drawable.cover_placeholder)
-        .error(R.drawable.cover_error)
+            .placeholder(R.drawable.cover_placeholder)
+            .error(R.drawable.cover_error)
 
     Glide.with(context.applicationContext)
-        .setDefaultRequestOptions(options)
-        .load(imageUrl)
-        .listener(requestListener)
-        .into(this)
+            .setDefaultRequestOptions(options)
+            .load(imageUrl)
+            .listener(requestListener)
+            .into(this)
 }

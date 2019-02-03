@@ -14,12 +14,12 @@ fun transformToStory(local: StoryLocal): Story =
 fun transformToMessages(dto: StoryDto): List<Message> {
     val list = mutableListOf<Message>()
     dto.messages.forEach { messageDto ->
-        list += toMessage(messageDto)
+        list += transformToMessage(messageDto)
     }
     return list
 }
 
-private fun toMessage(message: com.bravedroid.data.network.model.Message): Message {
+private fun transformToMessage(message: com.bravedroid.data.network.model.Message): Message {
     val id = message.ordinalInStory
     val senderId = message.sender.objectId
     val senderName = message.sender.name

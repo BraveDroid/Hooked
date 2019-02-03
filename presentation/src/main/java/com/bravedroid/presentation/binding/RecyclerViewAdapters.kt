@@ -5,7 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bravedroid.domain.Message
 import com.bravedroid.presentation.R
-import com.bravedroid.presentation.reader.MessageListAdapter
+import com.bravedroid.presentation.feature.reader.MessageListAdapter
+import com.bravedroid.presentation.ui.ItemOffsetDecoration
 
 
 @BindingAdapter("messageList")

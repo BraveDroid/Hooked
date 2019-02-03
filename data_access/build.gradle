@@ -20,18 +20,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
     implementation Dependencies.kotlin_stdlib
-    implementation Dependencies.timber
 
     implementation Dependencies.gson
     implementation Dependencies.retrofit
     implementation Dependencies.converter_gson
 
     implementation Dependencies.android_arch_lifecycle_livedata
+
+    implementation Dependencies.timber
 
     testImplementation Dependencies.junit
 

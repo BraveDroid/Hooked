@@ -29,6 +29,7 @@ android {
 
 dependencies {
     implementation Dependencies.kotlin_stdlib
+
     implementation Dependencies.appcompat
     implementation Dependencies.constraint_layout
     implementation Dependencies.core_ktx
@@ -38,7 +39,6 @@ dependencies {
     implementation Dependencies.support_v4
     implementation Dependencies.recyclerview_v7
 
-//    implementation Dependencies.recyclerview
     annotationProcessor Dependencies.glide_compiler
     implementation Dependencies.android_arch_lifecycle_runtime
     implementation Dependencies.android_arch_lifecycle_extensions

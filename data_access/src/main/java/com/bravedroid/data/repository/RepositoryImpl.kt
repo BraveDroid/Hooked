@@ -1,6 +1,5 @@
 package com.bravedroid.data.repository
 
-import android.annotation.TargetApi
 import android.content.Context
 import android.os.AsyncTask
 import android.os.Build
@@ -18,8 +17,11 @@ import com.bravedroid.usecases.repository.Repository
 import timber.log.Timber
 import java.time.Duration
 import java.time.Instant
+import java.util.*
+import android.net.ConnectivityManager
 
-class RepositoryImpl(context: Context) : Repository {
+
+class RepositoryImpl(private val context: Context) : Repository {
 
     private val localPersistence: LocalPersistence = LocalPersistenceImpl(context)
 
@@ -58,7 +60,7 @@ class RepositoryImpl(context: Context) : Repository {
         liveData: MutableLiveData<SubmitUiModel<Story>>,
         storyId: String
     ) {
-        if (hasInternetConnection()) {
+        if (hasInternetConnection(context)) {
             Timber.d("hasInternetConnection :TRUE")
             fetchStory(liveData, storyId, getUser(), localPersistence)
         } else {
@@ -68,6 +70,9 @@ class RepositoryImpl(context: Context) : Repository {
         }
     }
 
+    /**
+     * user could be stored in a db
+     */
     private fun getUser() = User(login = "test", password = "VF62pqDX")
 
     private fun fetchStory(
@@ -87,16 +92,32 @@ class RepositoryImpl(context: Context) : Repository {
     private fun isLocalDataExist(storyId: String): Boolean =
         localPersistence.getLastFetchInstant(storyId) != -1L
 
-    @TargetApi(Build.VERSION_CODES.O)
     private fun isLocalDataUpToDate(storyId: String): Boolean {
-        val last = Instant.ofEpochMilli(localPersistence.getLastFetchInstant(storyId))
-        val now = Instant.now()
-        val duration = Duration.between( last,now)
-        Timber.d("isLocalDataUpToDate duration: ${duration.seconds}:s ${duration.toMinutes()}:m")
-        return duration.toMinutes() < 2
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val last = Instant.ofEpochMilli(localPersistence.getLastFetchInstant(storyId))
+            val now = Instant.now()
+            val duration = Duration.between(last, now)
+            Timber.d("isLocalDataUpToDate duration: ${duration.seconds}:s ${duration.toMinutes()}:m")
+            return duration.toMinutes() < 2
+        } else {
+            val last = (localPersistence.getLastFetchInstant(storyId))
+            val now = Date().time
+            val duration = now - last
+            Timber.d("isLocalDataUpToDate duration: ${duration % 60}:s ${duration / (60 * 1000)}:m")
+            return (duration / (60 * 1000)) < 2
+        }
     }
 
-    private fun hasInternetConnection(): Boolean = true
+    private fun hasInternetConnection(context: Context): Boolean {
+        val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+
+        var isConnected = false
+        if (connectivityManager != null) {
+            val activeNetwork = connectivityManager.activeNetworkInfo
+            isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting
+        }
+        return isConnected
+    }
 
     private class WorkerAsyncTask(
         private val liveData: MutableLiveData<SubmitUiModel<Story>>,
@@ -122,7 +143,6 @@ class RepositoryImpl(context: Context) : Repository {
             }
             return null
         }
-
 
         private fun generateAuthorizationHeaderValue(): String {
             val encodeTo64 = Encoder64.encodeTo64("${user.login}:${user.password}")

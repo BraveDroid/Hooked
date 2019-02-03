@@ -16,7 +16,7 @@ object Versions {
 
     //androidx
     val support_lib = "$compile_sdk.0.0"
-    val constraint_layout = "1.1.2"
+    val constraint_layout = "1.1.3"
     val lifecycle_version = "1.1.1"
     //UI
     val glide = "4.8.0"
@@ -91,6 +91,6 @@ object Dependencies {
     val com_android_support_test_runner = "com.android.support.test:runner:${Versions.android_test_runner}"
     val espresso_core = "com.android.support.test.espresso:espresso-core:${Versions.espresso_core}"
 
-
+    //log
     val timber = "com.jakewharton.timber:timber:${Versions.timber}"
 }
