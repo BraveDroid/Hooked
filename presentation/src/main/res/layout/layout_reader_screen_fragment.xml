@@ -5,6 +5,9 @@
 
     <data>
         <variable
+                name="listener"
+                type="com.bravedroid.presentation.reader.ReaderScreenFragment.Listener"/>
+        <variable
                 name="vm"
                 type="com.bravedroid.presentation.reader.ReaderScreenVM"/>
     </data>
@@ -36,7 +39,7 @@
                 app:messageList="@{vm.messagesList}"/>
 
         <Button
-                android:onClick="@{()->vm.onNextClicked()}"
+                android:onClick="@{()->listener.onNextClicked()}"
                 android:id="@+id/nextButton"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"

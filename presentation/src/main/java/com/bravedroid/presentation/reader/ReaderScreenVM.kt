@@ -9,9 +9,6 @@ import com.bravedroid.usecases.reader.Reader
 class ReaderScreenVM(private val reader: Reader) : BaseViewModelObservable() {
      val messagesList = reader.getMessagesForStory("scavengerhunt")
     var i = 0
-    fun onNextClicked() {
-        Log.v("*****TAAAAAG", "${++i}")
-    }
 
     class ViewModelFactory(private val reader: Reader) : ViewModelProvider.Factory {
 
