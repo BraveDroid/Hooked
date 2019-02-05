@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bravedroid.domain.Message
+import com.bravedroid.domain.model.Message
 import com.bravedroid.presentation.databinding.LayoutMessageItemBinding
 
 class MessageListAdapter(private val messageList: List<Message>) :

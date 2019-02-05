@@ -1,4 +1,4 @@
-package com.bravedroid.domain
+package com.bravedroid.domain.model
 
 data class Story(
     val id: String,

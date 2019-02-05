@@ -2,17 +2,14 @@ package com.bravedroid.data.parse
 
 import com.bravedroid.data.network.model.StoryDto
 import com.bravedroid.data.util.transformToStory
-import com.bravedroid.domain.Story
+import com.bravedroid.domain.model.Story
 import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
-import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import java.nio.charset.Charset
-import java.nio.charset.StandardCharsets.*
 import java.nio.file.Files
 import java.nio.file.Paths
 

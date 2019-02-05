@@ -1,4 +1,6 @@
-package com.bravedroid.domain
+package com.bravedroid.usecases.model
+
+import com.bravedroid.domain.model.Story
 
 class SubmitUiModel<T>(
     val responseState: ResponseState,

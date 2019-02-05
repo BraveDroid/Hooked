@@ -12,13 +12,19 @@ import com.bravedroid.data.network.service.HookedNetworkServiceFactory
 import com.bravedroid.data.util.Encoder64
 import com.bravedroid.data.util.transformToMessages
 import com.bravedroid.data.util.transformToStory
-import com.bravedroid.domain.*
 import com.bravedroid.usecases.repository.Repository
 import timber.log.Timber
 import java.time.Duration
 import java.time.Instant
 import java.util.*
 import android.net.ConnectivityManager
+import com.bravedroid.domain.model.Message
+import com.bravedroid.domain.model.Story
+import com.bravedroid.domain.model.User
+import com.bravedroid.usecases.model.NoInternetResponseError
+import com.bravedroid.usecases.model.ServerResponseError
+import com.bravedroid.usecases.model.SubmitUiModel
+import com.bravedroid.usecases.model.createSubmitUiModel
 
 
 class RepositoryImpl(private val context: Context) : Repository {
@@ -27,7 +33,8 @@ class RepositoryImpl(private val context: Context) : Repository {
 
     override fun getStory(storyId: String): LiveData<SubmitUiModel<Story>> {
         val liveData = MutableLiveData<SubmitUiModel<Story>>()
-        liveData.value = createSubmitUiModel(SubmitUiModel.ResponseState.LOADING)
+        liveData.value =
+            createSubmitUiModel(SubmitUiModel.ResponseState.LOADING)
 
         if (!isLocalDataExist(storyId)) {
             Timber.d("isLocalDataExist FALSE")
@@ -66,7 +73,11 @@ class RepositoryImpl(private val context: Context) : Repository {
         } else {
             Timber.d("hasInternetConnection :FALSE")
             liveData.value =
-                createSubmitUiModel(SubmitUiModel.ResponseState.ERROR, null, NoInternetResponseError())
+                createSubmitUiModel(
+                    SubmitUiModel.ResponseState.ERROR,
+                    null,
+                    NoInternetResponseError()
+                )
         }
     }
 
@@ -137,9 +148,20 @@ class RepositoryImpl(private val context: Context) : Repository {
                     StoryLocal(story.id, story.title, story.description ?: "", story.urlImageCover, messages)
                 localPersistence.saveOrUpdate(storyLocal)
 
-                liveData.postValue(createSubmitUiModel(SubmitUiModel.ResponseState.SUCCESS, story))
+                liveData.postValue(
+                    createSubmitUiModel(
+                        SubmitUiModel.ResponseState.SUCCESS,
+                        story
+                    )
+                )
             } else {
-                liveData.postValue(createSubmitUiModel(SubmitUiModel.ResponseState.ERROR, null, ServerResponseError()))
+                liveData.postValue(
+                    createSubmitUiModel(
+                        SubmitUiModel.ResponseState.ERROR,
+                        null,
+                        ServerResponseError()
+                    )
+                )
             }
             return null
         }

@@ -13,7 +13,7 @@
 
         <variable
             name="message"
-            type="com.bravedroid.domain.Message" />
+            type="com.bravedroid.domain.model.Message" />
     </data>
 
     <androidx.cardview.widget.CardView

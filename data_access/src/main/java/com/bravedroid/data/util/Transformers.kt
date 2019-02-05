@@ -1,9 +1,9 @@
 package com.bravedroid.data.util
 
 import com.bravedroid.data.local.model.StoryLocal
-import com.bravedroid.domain.Message
+import com.bravedroid.domain.model.Message
 import com.bravedroid.data.network.model.StoryDto
-import com.bravedroid.domain.Story
+import com.bravedroid.domain.model.Story
 
 fun transformToStory(dto: StoryDto): Story =
     Story(dto.uid, dto.seriesTitle, dto.storyDescription, dto.coverImageFile.url)
